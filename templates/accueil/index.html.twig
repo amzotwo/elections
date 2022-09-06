@@ -1,0 +1,553 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+    {{  block("banner", "banner/index.html.twig") }}
+
+    <div class="countdown-area">
+        <div class="container">
+            <div class="countdown-wrap">
+                <h2>La Date des Elections Approche. Soyez prêts!!!!</h2>
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-lg-3">
+                        <div class="coming-inner">
+                            <span id="days"></span>
+                            <p>Days</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-3">
+                        <div class="coming-inner">
+                            <span id="hours"></span>
+                            <p>Hours</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-3">
+                        <div class="coming-inner">
+                            <span id="minutes"></span>
+                            <p>Minutes</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-3">
+                        <div class="coming-inner dotted-right">
+                            <span id="seconds"></span>
+                            <p>Seconds</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-area two three pt-100 pb-70">
+        <div class="about-shape">
+            <img src="assets/images/about-shape1.png" alt="Shape">
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-img-three">
+                        <img src="assets/images/banner/about.jpg" alt="About">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <div class="section-title two">
+                            <span class="sub-title">About The Leader</span>
+                            <h2>Meet The Leader Of The Future <span>Angela James Parker</span></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur numquam magnam, sed perspiciatis mollitia nesciunt amet, consequuntur error culpa nobis dolore asperiores eum non quasi</p>
+                        </div>
+                        <ul class="align-items-center">
+                            <li>
+                                <img src="assets/images/signature.png" alt="Signature">
+                            </li>
+                            <li>
+                                <h3>Angela James</h3>
+                                <span>Chairman, Pily</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="election-area two ptb-100">
+        <div class="election-shape">
+            <img src="assets/images/about-shape1.png" alt="Shape">
+            <img src="assets/images/about-shape1.png" alt="Shape">
+        </div>
+        <div class="container">
+            <h2>It's Election day. Go Vote For Parker!</h2>
+        </div>
+    </div>
+
+    <div class="donate-area two three ptb-100">
+        <div class="container">
+            <div class="section-title two">
+                <span class="sub-title">Donate Us</span>
+                <h2>Contribute & Be A Part Of Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur numquam magnam, sed perspiciatis mollitia nesciunt amet, consequuntur error culpa nobis dolore asperiores eum non quasi</p>
+            </div>
+            <div class="donate-wrap">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="donate-left">
+                            <h3>Your Donation Helps To Choose A Perfect Candidate</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro minus quis asperiores architecto iste sunt eius aut, voluptatem at? Adipisci sint, quod minima debitis totam architecto</p>
+                            <ul>
+                                <li>
+                                    <a href="#">$10.00</a>
+                                </li>
+                                <li>
+                                    <a href="#">$15.00</a>
+                                </li>
+                                <li>
+                                    <a href="#">$20.00</a>
+                                </li>
+                                <li>
+                                    <a href="#">$50.00</a>
+                                </li>
+                                <li>
+                                    <a href="#">$100.00</a>
+                                </li>
+                                <li>
+                                    <a href="#">$200.00</a>
+                                </li>
+                                <li>
+                                    <a href="#">Others</a>
+                                </li>
+                            </ul>
+                            <a class="common-btn two" href="#">
+                                Donate Now
+                                <i class="icofont-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="donate-right">
+                            <h3>Download Manifesto</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur commodi perspiciatis voluptate aut. Rerum, deserunt ipsa veritatis molestias sequi at quisquam ut ea</p>
+                            <a class="common-btn two" href="#">
+                                Download Now
+                                <i class="icofont-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="live-area two pb-100">
+        <div class="container">
+            <div class="section-title two">
+                <span class="sub-title">Live</span>
+                <h2>See Our Work Live</h2>
+            </div>
+            <div class="live-content">
+                <img src="assets/images/live-main2.jpg" alt="Live">
+                <div class="video-wrap">
+                    <button class="js-modal-btn" data-video-id="YzIcWW3FWSQ">
+                        <i class="icofont-ui-play"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="campaign-area pb-70">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="campaign-img">
+                        <ul>
+                            <li>
+                                <img src="assets/images/campaign1.jpg" alt="Campaign">
+                            </li>
+                            <li>
+                                <img src="assets/images/campaign2.jpg" alt="Campaign">
+                            </li>
+                            <li>
+                                <img src="assets/images/campaign3.jpg" alt="Campaign">
+                            </li>
+                            <li>
+                                <img src="assets/images/campaign4.jpg" alt="Campaign">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="campaign-content">
+                        <div class="section-title two">
+                            <span class="sub-title">Campaign</span>
+                            <h2>This Campaign Can Make A Big Change</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur numquam magnam, sed perspiciatis mollitia nesciunt amet, consequuntur error culpa nobis dolore asperiores eum non quasi</p>
+                        </div>
+                        <div class="inner">
+                            <i class="icofont-bullseye icon"></i>
+                            <h3>Campaign's Goal & Mission</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo dignissimos neque in? Optio officia.</p>
+                            <a class="common-btn two" href="#">
+                                Download Brochure
+                                <i class="icofont-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="amount-area pb-100">
+        <div class="container">
+            <div class="section-title two">
+                <span class="sub-title">Donation Amount</span>
+                <h2>Contribution Can Make A Big Change</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur numquam magnam, sed perspiciatis mollitia nesciunt amet, consequuntur error culpa nobis dolore asperiores eum non quasi</p>
+            </div>
+            <div class="amount-item">
+                <h2>$53,6890.00</h2>
+                <span>Raised For Campaign By The Supporters</span>
+                <a class="common-btn two" href="#">
+                    Donate Now
+                    <i class="icofont-heart"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="ideology-area two three pt-100 pb-70">
+        <div class="container">
+            <div class="section-title two">
+                <span class="sub-title">Our Ideology</span>
+                <h2>We Walk Through Our Ideology</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur numquam magnam, sed perspiciatis mollitia nesciunt amet, consequuntur error culpa nobis dolore asperiores eum non quasi</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="ideology-item">
+                        <img src="assets/images/ideology/ideology4.jpg" alt="Ideology">
+                        <div class="bottom">
+                            <h3>Arranging Election</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="ideology-item">
+                        <img src="assets/images/ideology/ideology5.jpg" alt="Ideology">
+                        <div class="bottom">
+                            <h3>Campaign Badge</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 offset-sm-3 offset-lg-0 col-lg-4">
+                    <div class="ideology-item">
+                        <img src="assets/images/ideology/ideology6.jpg" alt="Ideology">
+                        <div class="bottom">
+                            <h3>Campaign Instrument</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-area pb-100">
+        <div class="container">
+            <div class="section-title two">
+                <span class="sub-title">Volunteers</span>
+                <h2>Our Successful Volunteers</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur numquam magnam, sed perspiciatis mollitia nesciunt amet, consequuntur error culpa nobis dolore asperiores eum non quasi</p>
+            </div>
+            <div class="team-slider owl-theme owl-carousel">
+                <div class="team-item">
+                    <div class="top">
+                        <img src="assets/images/team/team1.jpg" alt="Team">
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="icofont-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="icofont-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="icofont-youtube-play"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="icofont-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bottom">
+                        <h3>Jane Ronan</h3>
+                        <span>Campaign Influencer</span>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <div class="top">
+                        <img src="assets/images/team/team2.jpg" alt="Team">
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="icofont-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="icofont-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="icofont-youtube-play"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="icofont-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bottom">
+                        <h3>Tom Henry</h3>
+                        <span>Donation Collector</span>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <div class="top">
+                        <img src="assets/images/team/team3.jpg" alt="Team">
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="icofont-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="icofont-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="icofont-youtube-play"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="icofont-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bottom">
+                        <h3>Erif Ertan</h3>
+                        <span>Donation Collector</span>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <div class="top">
+                        <img src="assets/images/team/team4.jpg" alt="Team">
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="icofont-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="icofont-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="icofont-youtube-play"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="icofont-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bottom">
+                        <h3>Micheal Shon</h3>
+                        <span>Donation Collector</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="volunteer-area two">
+        <div class="container">
+            <div class="volunteer-content">
+                <span class="title">The Volunteer</span>
+                <h3>Become A Proud Volunteer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur commodi perspiciatis voluptate aut. Rerum, deserunt ipsa veritatis molestias sequi at quisquam ut ea</p>
+                <a class="common-btn two" href="#">
+                    Join Now
+                    <i class="icofont-long-arrow-right"></i>
+                </a>
+                <a class="volunteer-btn common-btn two" href="#">
+                    See Our Plan
+                    <i class="icofont-long-arrow-right"></i>
+                </a>
+                <span class="scroll-span left">Become A</span>
+                <span class="scroll-span right">Volunteer</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="subscribe-area two mt-100 pt-100 pb-70">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="subscribe-content">
+                        <h2>Stay Up-To-Date Of Our Election Campaign & Get Subscribe!</h2>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="subscribe-item">
+                        <form class="newsletter-form" data-toggle="validator">
+                            <input type="email" class="form-control" placeholder="Enter Your Email" name="EMAIL" required autocomplete="off">
+                            <button class="btn common-btn two" type="submit">
+                                Subscribe Now
+                                <i class="icofont-long-arrow-right"></i>
+                            </button>
+                            <div id="validator-newsletter" class="form-result"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="blog-area two pt-100 pb-70">
+        <div class="container">
+            <div class="section-title two">
+                <span class="sub-title">Blog</span>
+                <h2>Read Latest News About Politics</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur numquam magnam, sed perspiciatis mollitia nesciunt amet, consequuntur error culpa nobis dolore asperiores eum non quasi</p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="blog-item">
+                        <div class="top">
+                            <a href="blog-details.html">
+                                <img src="assets/images/blog/blog1.jpg" alt="Blog">
+                            </a>
+                        </div>
+                        <div class="bottom">
+                            <ul>
+                                <li>
+                                    <i class="icofont-calendar"></i>
+                                    <span>20 Oct, 2020</span>
+                                </li>
+                                <li>
+                                    <i class="icofont-user-alt-4"></i>
+                                    <span>By:</span>
+                                    <a href="#">Admin</a>
+                                </li>
+                            </ul>
+                            <h3>
+                                <a href="blog-details.html">We Can Achieve Anything By Heart</a>
+                            </h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ut nisi impedit debitis maiores blanditiis eaque. Dicta minima et pariatur, nostrum ab impedit tenetur repellendus molestias</p>
+                            <a class="blog-btn" href="blog-details.html">
+                                Read More
+                                <i class="icofont-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="blog-side-item align-items-center">
+                        <div class="left">
+                            <img src="assets/images/blog/blog-side1.jpg" alt="Blog">
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <li>
+                                    <i class="icofont-calendar"></i>
+                                    <span>21 Oct, 2020</span>
+                                </li>
+                                <li>
+                                    <i class="icofont-user-alt-4"></i>
+                                    <span>By:</span>
+                                    <a href="#">Admin</a>
+                                </li>
+                            </ul>
+                            <h3>
+                                <a href="blog-details.html">Today's Fight Can Give Us A Better Life & Get Your Right</a>
+                            </h3>
+                            <a class="blog-btn" href="blog-details.html">
+                                Read More
+                                <i class="icofont-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-side-item align-items-center">
+                        <div class="left">
+                            <img src="assets/images/blog/blog-side2.jpg" alt="Blog">
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <li>
+                                    <i class="icofont-calendar"></i>
+                                    <span>22 Oct, 2020</span>
+                                </li>
+                                <li>
+                                    <i class="icofont-user-alt-4"></i>
+                                    <span>By:</span>
+                                    <a href="#">Admin</a>
+                                </li>
+                            </ul>
+                            <h3>
+                                <a href="blog-details.html">Strong Community Can Lead A Country Prosper</a>
+                            </h3>
+                            <a class="blog-btn" href="blog-details.html">
+                                Read More
+                                <i class="icofont-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-side-item align-items-center">
+                        <div class="left">
+                            <img src="assets/images/blog/blog-side3.jpg" alt="Blog">
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <li>
+                                    <i class="icofont-calendar"></i>
+                                    <span>23 Oct, 2020</span>
+                                </li>
+                                <li>
+                                    <i class="icofont-user-alt-4"></i>
+                                    <span>By:</span>
+                                    <a href="#">Admin</a>
+                                </li>
+                            </ul>
+                            <h3>
+                                <a href="blog-details.html">Media Coverage Of The Protesting Event With Dignity</a>
+                            </h3>
+                            <a class="blog-btn" href="blog-details.html">
+                                Read More
+                                <i class="icofont-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

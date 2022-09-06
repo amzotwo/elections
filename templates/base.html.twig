@@ -1,19 +1,54 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
-        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
-        {% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
-        {% endblock %}
+<html lang="zxx">
 
-        {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
-        {% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/css/icofont.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/css/meanmenu.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/css/animate.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/css/odometer.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.theme.default.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/css/modal-video.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/css/nice-select.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/css/responsive.css')}}">
+
+    <title>ELECTION </title>
+    <link rel="icon" type="image/png" href="{{ asset('assets/images/favicon.png')}}">
+</head>
+<body>
+
+{{ block("header_of_page", "header/index.html.twig") }}
+
+{% block content %}
+
+{% endblock %}
+
+{{ block("footer", "footer/index.html.twig") }}
+
+<link rel="stylesheet" href="{{ asset('assets/css/responsive.css')}}">
+
+<script data-cfasync="false" src="{{ asset('../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.min.js') }}"></script>
+<script src="{{ asset('assets/js/popper.min.js') }}"></script>
+<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('assets/js/form-validator.min.js') }}"></script>
+<script src="{{ asset('assets/js/contact-form-script.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.ajaxchimp.min.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.meanmenu.js') }}"></script>
+<script src="{{ asset('assets/js/odometer.min.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.appear.min.js') }}"></script>
+<script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
+<script src="{{ asset('assets/js/wow.min.js') }}"></script>
+<script src="{{ asset('assets/js/jquery-modal-video.min.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
+<script src="{{ asset('assets/js/custom.js') }}"></script>
+
+</body>
+
 </html>
