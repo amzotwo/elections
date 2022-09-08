@@ -91,7 +91,7 @@
                                     </li>
 
                                     <li class="nav-item">
-                                        <a href="team.html" class="nav-link">Calendrier</a>
+                                        <a href="{{ path('app_events') }}" class="nav-link">Calendrier</a>
                                     </li>
 
                                     <li class="nav-item">
@@ -108,13 +108,24 @@
                                             </li>
                                         </ul>
                                     </li>
+                                    <li class="nav-item">
+                                        <a href="{{ path('app_teams') }}" class="nav-link">Teams</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link dropdown-toggle">Elections <i class="icofont-simple-down"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="faq.php" class="nav-link">Presidentielles 2024</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="faq.php" class="nav-link">Legislatives 2022</a>
+                                            </li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a href="parti.php" class="nav-link">Les partis</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="blog.html" class="nav-link">Actualites</a>
+                                <a href="{{ path('app_actualite') }}" class="nav-link">Actualites</a>
                             </li>
                             <li class="nav-item">
                                 <a href="{{ path('app_contact') }}" class="nav-link">Contact</a>
