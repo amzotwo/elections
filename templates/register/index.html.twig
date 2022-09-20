@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <body>
+
+    <div class="loader" style="display: none;">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="sub-loader"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="user-form-area ptb-100" style="height: 820px">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="container">
+                    <div class="form-item">
+                            <h2 class="text-white">Inscription </h2>
+                          {{ form(form) }}
+                        <div class="user-btn">
+                            <h3>J'ai déjà un compte ?<a href="{{ path('app_login') }}">Se connecter</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="go-top">
+        <i class="icofont-polygonal"></i>
+        <i class="icofont-polygonal"></i>
+    </div>
+
+    </body>
+{% endblock %}

@@ -1,0 +1,291 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+    {{  block("banner", "banner/index.html.twig") }}
+
+    <div class="countdown-area">
+        <div class="container">
+            <div class="countdown-wrap">
+                <h2>La Date des Elections Approche. Soyez prêts!!!!</h2>
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-lg-3">
+                        <div class="coming-inner">
+                            <span id="days"></span>
+                            <p>Days</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-3">
+                        <div class="coming-inner">
+                            <span id="hours"></span>
+                            <p>Hours</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-3">
+                        <div class="coming-inner">
+                            <span id="minutes"></span>
+                            <p>Minutes</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-3">
+                        <div class="coming-inner dotted-right">
+                            <span id="seconds"></span>
+                            <p>Seconds</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-area two three pt-100 pb-70">
+        <div class="about-shape">
+            <img src="assets/images/about-shape1.png" alt="Shape">
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-img-three">
+                        <img src="assets/images/banner/about.jpg" alt="About">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <div class="section-title">
+                            <span class="sub-title">A Propos des Elections</span>
+                            <h2>Les elections <span>au Sénégal</span></h2>
+                            <p> L'élection est la désignation, par le vote d'électeurs, de représentants (une personne,
+                                un groupe, un parti politique) destinés à les représenter ou occuper une fonction en leur nom.
+                                La population concernée transfère par le vote de sa majorité à des représentants ou mandants
+                                choisis, la légitimité requise pour exercer le pouvoir attribué
+                                (fonction censée être par ailleurs définie et orientée par le biais d'un programme politique).</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="election-area two ptb-100">
+        <div class="container">
+            <h2>Voter est un droit, un acte citoyen!</h2>
+        </div>
+    </div>
+
+
+    <div class="live-area two pb-100  mt-10">
+        <div class="container">
+            <div class="section-title two">
+                <span class="sub-title">Video</span>
+                <h2>Leadership Politique</h2>
+            </div>
+            <div class="live-content">
+                <img src="assets/images/live-main2.jpg" alt="Live">
+                <div class="video-wrap">
+                    <button class="js-modal-btn" data-video-id="YzIcWW3FWSQ">
+                        <i class="icofont-ui-play"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="amount-area pb-100">
+        <div class="container">
+            <div class="section-title two">
+                <span class="sub-title">LES ELECTEURS</span>
+                <h2>Leur contribution fera le changement</h2>
+                <p>La participation politique active des femmes et des jeunes, gage d'une démocratie inclusive et pacifique »</p>
+            </div>
+            <div class="amount-item">
+                <h2>7.036.466 Electeurs</h2>
+                <span>Raised For Campaign By The Supporters</span>
+                <a class="common-btn two" href="#">
+                    S'inscrire
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="ideology-area two three pt-100 pb-70">
+        <div class="container">
+            <div class="section-title two">
+                <span class="sub-title">INSTITUTIONS</span>
+                <h2>Choisir ses Representants</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur numquam magnam, sed perspiciatis mollitia nesciunt amet, consequuntur error culpa nobis dolore asperiores eum non quasi</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="ideology-item">
+                        <img src="assets/images/ideology/palais.jpg" alt="Ideology">
+                        <div class="bottom">
+                            <h3>Election Presidentielle</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="ideology-item">
+                        <img src="assets/images/ideology/assemblee-nationale.jpg" alt="Ideology">
+                        <div class="bottom">
+                            <h3>Elections Legislatives</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 offset-sm-3 offset-lg-0 col-lg-4">
+                    <div class="ideology-item">
+                        <img src="assets/images/ideology/marie.jpg" alt="Ideology">
+                        <div class="bottom">
+                            <h3>Elections Locales</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="subscribe-area two mt-100 pt-100 pb-70">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="subscribe-content">
+                        <h2>Restez au courant des activites electorales et abonnez-vous !</h2>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="subscribe-item">
+                        <form class="newsletter-form" data-toggle="validator">
+                            <input type="email" class="form-control" placeholder="Entrer votre adresse Email" name="EMAIL" required >
+                            <button class="btn common-btn two" type="submit">
+                                Abonnez-vous
+                                <i class="icofont-long-arrow-right"></i>
+                            </button>
+                            <div id="validator-newsletter" class="form-result"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="blog-area two pt-100 pb-70">
+        <div class="container">
+            <div class="section-title two">
+                <span class="sub-title">ACTUALITES</span>
+                <h2>Lire les dernières nouvelles sur la politique</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur numquam magnam, sed perspiciatis mollitia nesciunt amet, consequuntur error culpa nobis dolore asperiores eum non quasi</p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="blog-item">
+                        <div class="top">
+                            <a href="blog-details.html">
+                                <img src="assets/images/blog/blog1.jpg" alt="Blog">
+                            </a>
+                        </div>
+                        <div class="bottom">
+                            <ul>
+                                <li>
+                                    <i class="icofont-calendar"></i>
+                                    <span>20 Oct, 2020</span>
+                                </li>
+                                <li>
+                                    <i class="icofont-user-alt-4"></i>
+                                    <span>By:</span>
+                                    <a href="#">Admin</a>
+                                </li>
+                            </ul>
+                            <h3>
+                                <a href="blog-details.html">We Can Achieve Anything By Heart</a>
+                            </h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ut nisi impedit debitis maiores blanditiis eaque. Dicta minima et pariatur, nostrum ab impedit tenetur repellendus molestias</p>
+                            <a class="blog-btn" href="blog-details.html">
+                                Read More
+                                <i class="icofont-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="blog-side-item align-items-center">
+                        <div class="left">
+                            <img src="assets/images/blog/blog-side1.jpg" alt="Blog">
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <li>
+                                    <i class="icofont-calendar"></i>
+                                    <span>21 Oct, 2020</span>
+                                </li>
+                                <li>
+                                    <i class="icofont-user-alt-4"></i>
+                                    <span>By:</span>
+                                    <a href="#">Admin</a>
+                                </li>
+                            </ul>
+                            <h3>
+                                <a href="blog-details.html">Today's Fight Can Give Us A Better Life & Get Your Right</a>
+                            </h3>
+                            <a class="blog-btn" href="blog-details.html">
+                                Read More
+                                <i class="icofont-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-side-item align-items-center">
+                        <div class="left">
+                            <img src="assets/images/blog/blog-side2.jpg" alt="Blog">
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <li>
+                                    <i class="icofont-calendar"></i>
+                                    <span>22 Oct, 2020</span>
+                                </li>
+                                <li>
+                                    <i class="icofont-user-alt-4"></i>
+                                    <span>By:</span>
+                                    <a href="#">Admin</a>
+                                </li>
+                            </ul>
+                            <h3>
+                                <a href="blog-details.html">Strong Community Can Lead A Country Prosper</a>
+                            </h3>
+                            <a class="blog-btn" href="blog-details.html">
+                                Read More
+                                <i class="icofont-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-side-item align-items-center">
+                        <div class="left">
+                            <img src="assets/images/blog/blog-side3.jpg" alt="Blog">
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <li>
+                                    <i class="icofont-calendar"></i>
+                                    <span>23 Oct, 2020</span>
+                                </li>
+                                <li>
+                                    <i class="icofont-user-alt-4"></i>
+                                    <span>By:</span>
+                                    <a href="#">Admin</a>
+                                </li>
+                            </ul>
+                            <h3>
+                                <a href="blog-details.html">Media Coverage Of The Protesting Event With Dignity</a>
+                            </h3>
+                            <a class="blog-btn" href="blog-details.html">
+                                Read More
+                                <i class="icofont-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
